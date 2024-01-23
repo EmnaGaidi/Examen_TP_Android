@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060127074345",
+    "project_id": "login-register-firebase-d70a3",
+    "storage_bucket": "login-register-firebase-d70a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060127074345:android:a10781dfb75f59f5c21438",
+        "android_client_info": {
+          "package_name": "com.tp.examentp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOJd8urLqy8oYe7dZgSt7pb2sTHFUv1DA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
