@@ -16,11 +16,26 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Register"
+            android:exported="false"
+            android:label="@string/Register"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MovieDetailsActivity"
             android:exported="false">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <meta-data
@@ -28,9 +43,10 @@
                 android:value=".NewMainActivity" />
         </activity>
         <activity android:name=".ShowDetailsActivity">
-                <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".ShowsActivity" /></activity>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowsActivity" />
+        </activity>
         <activity android:name=".ShowsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -38,14 +54,8 @@
         </activity>
         <activity
             android:name=".NewMainActivity"
-            android:theme="@style/AppTheme"
             android:exported="true"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:theme="@style/AppTheme">
         </activity>
     </application>
 
